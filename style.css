@@ -92,13 +92,20 @@
     }
 
 
-    #botonParaCerrar{
+    #botonParaCerrar {
         display: none;
     }
 
 
 
     /******************************************presentacion******************************************/
+
+    /*texto complementario*/
+    .TextoComplementario {
+        visibility: hidden;
+        height: 0;
+    }
+
 
     /*espacio para la imagen*/
     #ParteImagenGrande {
@@ -271,14 +278,15 @@
 
 
     /*boton de hambuerguesa*/
-    .abrirMenu{
+    .abrirMenu {
         position: relative;
         display: flex;
         margin-right: 25px;
         background-color: transparent;
         border: 0;
-        color: azure;}
-       
+        color: azure;
+    }
+
     /*boton cerrar*/
     #botonParaCerrar {
         position: relative;
@@ -286,7 +294,7 @@
         margin-right: 30px;
         background-color: transparent;
         border: 0;
-        color: azure;        
+        color: azure;
     }
 
 
@@ -294,7 +302,7 @@
     /*contenedor*/
     .nav {
         /*display: none;*/
-        
+
         position: absolute;
         background-color: black;
         top: 0;
@@ -314,7 +322,7 @@
         visibility: visible;
     }
 
-    
+
 
     .nav-list {
         color: white;
@@ -330,14 +338,14 @@
         color: white;
     }
 
-    .nav-list>#botonParaCerrar{
+    .nav-list>#botonParaCerrar {
         margin-left: 4em;
     }
 
     /*problema*/
 
 
-    
+
     /************************cuando el mouse este encima********************/
     .linksP:hover {
 
@@ -347,6 +355,12 @@
 
 
     /******************************************presentacion******************************************/
+
+    /*texto complementario*/
+    .TextoComplementario {
+        visibility: hidden;
+        height: 0;
+    }
 
     /*espacio para la imagen*/
     #ParteImagenGrande {
@@ -485,8 +499,6 @@
         flex-direction: row;
         background-color: #038C3E;
         height: 60px;
-
-        /*mueve en vertical al centro*/
         align-items: center;
     }
 
@@ -500,7 +512,7 @@
         height: 100px;
         color: azure;
         font-family: 'Climate Crisis', sans-serif;
-        font-size: .5vw;
+        font-size: 3.5vw;
 
         margin: 0px 0px 0px 30px;
     }
@@ -514,43 +526,90 @@
     /*contenedor*/
     #encabezadoLinks {
         display: flex;
-        justify-content: center;
-        height: 30px;
+        justify-content: space-between;
+        height: 50px;
     }
+
+    /*boton de hambuerguesa*/
+    .abrirMenu {
+        position: relative;
+        display: flex;
+        margin-right: 25px;
+        background-color: transparent;
+        border: 0;
+        color: azure;
+    }
+
+    /*boton cerrar*/
+    #botonParaCerrar {
+        position: relative;
+        display: flex;
+        margin-right: 30px;
+        background-color: transparent;
+        border: 0;
+        color: azure;
+    }
+
 
     /*links*/
-    #encabezadoLinks>.linksP {
+    /*contenedor*/
+    .nav {
+        position: absolute;
+        background-color: black;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
 
-        display: flex;
-        align-items: center;
+        /*para ocultar el menu*/
+        opacity: 0;
+        visibility: hidden;
+    }
 
-        font-family: 'Playpen Sans', cursive;
-        font-weight: 700;
-        color: azure;
-        padding: 0px 10px 0px 10px;
-        text-decoration: none;
-        height: 30px;
+    /*na que mostrara el menu*/
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav-list {
+        color: white;
+        list-style-type: none;
+        margin: 0px;
+    }
+
+    .nav-list>li {
         margin: 10px;
-
     }
 
-    #encabezadoLinks>.linksP>a {
-        font-family: 'Playpen Sans', cursive;
-        font-weight: 900;
-        color: azure;
-        text-decoration: none;
-        padding: 0px 0px 0px 10px;
+    .nav-list>li>a {
+        color: white;
     }
 
-    /*cuando el mouse este encima*/
-    .linksP:hover {
-
-        font-size: 1.2em;
-
+    .nav-list>#botonParaCerrar {
+        margin-left: 4em;
     }
+
 
 
     /******************************************presentacion******************************************/
+    /*texto complementario*/
+    .TextoComplementario {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .TextoComplementario>h1 {
+        font-size: 50px;
+    }
+
+    .TextoComplementario>p {
+        margin-bottom: 30px;
+    }
+
 
     /*espacio para la imagen*/
     #ParteImagenGrande {
@@ -561,18 +620,19 @@
     }
 
     #ParteImagenGrande>img {
-        height: 33.3vw;
+        height: 0px;
 
     }
 
 
     /*parte de texto*/
 
-
     #textoDImagenPrincipal {
         display: flex;
         flex-direction: column;
         align-items: center;
+        opacity: 0;
+        visibility: hidden;
 
     }
 
@@ -612,7 +672,7 @@
         font-weight: 800;
         flex-direction: column;
         justify-content: center;
-        width: 350px;
+        width: 320px;
         padding: 0px 0px 0px 0px;
     }
 
@@ -624,18 +684,23 @@
 
     /*botones*/
     #Cajabotones1>button {
-        width: 200px;
+        width: 230px;
         height: 50px;
         padding: 10 px;
-        margin: 10px;
+        margin: 0px 10px 10px 10px;
     }
 
 
     /*imagen secundaria*/
     #imagenSecundaria {
-        width: 47vw;
-        height: 70vw;
+        width: 75vw;
+        height: 110vw;
     }
+
+
+
+
+
 
 
     /************************************pie de pagina *****************************************/
@@ -676,5 +741,3 @@
 
 
 }
-
-
