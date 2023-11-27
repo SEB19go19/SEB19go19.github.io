@@ -1,0 +1,914 @@
+/*para la pantalla grande*/
+@media (min-width: 1023px) {
+
+    /***************************************encabezado*******************************************/
+
+    /*caja de encabezado*/
+    #encabezadoLinks.flex-container {
+        display: flex;
+        flex-direction: row;
+        background-color: #2fb167;
+        height: 60px;
+
+
+        /*mueve en vertical al centro*/
+        align-items: center;
+    }
+
+    #encabezadoLinks {
+        /*para qeu el titulo este separado de los links*/
+        justify-content: space-between;
+    }
+
+    /*encabezado primero*/
+
+    /*mi nombre*/
+    #encabezadoLinks>.tituloNombre>a {
+        display: flex;
+        align-items: center;
+        height: 100px;
+        color: azure;
+        font-family: 'Climate Crisis', sans-serif;
+        font-size: 1.5vw;
+        margin: 0px 0px 0px 100px;
+    }
+
+    .tituloNombre>a {
+        font-weight: 100;
+        padding: 0px 0px 0px 30px;
+        text-decoration: none;
+    }
+
+
+    /******************************************links******************************************/
+    /*contenedor*/
+    /*
+    #encabezadoLinks {
+        display: flex;
+        justify-content: center;
+        height: 50px;
+    }*/
+
+
+    /*boton de hambuerguesa*/
+    .abrirMenu {
+        display: none;
+    }
+
+    .nav-list {
+        display: flex;
+        margin-bottom: 0px;
+    }
+
+    /*contenedor de los iconos con letras*/
+    /*iconos*/
+    /*links*/
+    .nav-list>li {
+        display: flex;
+        align-items: center;
+        font-family: 'Playpen Sans', cursive;
+        font-weight: 900;
+        color: azure;
+        padding: 0px 100px 0px 10px;
+        text-decoration: none;
+        height: 50px;
+        margin: 0px;
+    }
+
+
+    .nav-list>li>a {
+        font-family: 'Playpen Sans', cursive;
+        font-weight: 900;
+        color: azure;
+        text-decoration: none;
+        padding: 0px 0px 0px 10px;
+    }
+
+    /*cuando el mouse este encima*/
+    .nav-list>li>a:hover {
+        color: rgba(85, 27, 177, 0.514);
+        font-size: 1.01em;
+    }
+
+
+    #botonParaCerrar {
+        display: none;
+    }
+
+
+
+
+    /**************************************imagen grande*********************************************/
+
+    #imagenGrande {
+        display: flex;
+        align-items: center;
+        font-family: 'Climate Crisis', sans-serif;
+
+    }
+
+    /*imagen*/
+    #imagen {
+        width: 100vw;
+    }
+
+    /*texto*/
+    #imagenGrande>h1,
+    #imagenGrande>p {
+        position: absolute;
+        color: white;
+        margin: 0 0 0 10vw;
+    }
+
+    #imagenGrande>h1 {
+        margin: 0 0 25vw 10vw;
+    }
+
+    #imagenGrande>p {
+        width: 50vw;
+        margin: 5% 0 15vw 10vw;
+        font-size: 1.3vw;
+
+
+    }
+
+    /***********************************titulo de proyectos**************************************************/
+
+
+
+    #TituloDProyectos {
+        background-color: #2fb167;
+        font-family: 'Climate Crisis', sans-serif;
+        font-size: 1.7vw;
+        padding: 10px 10px 10px 7vw;
+        color: white;
+
+    }
+
+
+    /************************************fila de proyectos**************************************/
+
+    /*********fila uno ********/
+    /*fila UNO*/
+    #filaUNO {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Playpen Sans', cursive;
+        margin: 10px 0 10px 0px;
+        width: 100vw;
+    }
+
+    /*fila UNO*/
+    #PrimeraParteA:hover {
+        box-shadow: 0 0 20px #434444;
+    }
+
+
+    #filaUNO>#PrimeraParteA>h3 {
+        font-weight: 900;
+        font-size: 1.5vw;
+    }
+
+    /*primera parte A*/
+    #filaUNO>#PrimeraParteA {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0px 0px 0px 200px;
+    }
+
+    /*imagen del proyecto*/
+    #imagenPortafolioUno {
+        width: 24vw;
+        height: 15vw;
+    }
+
+    /*descripcion del proyecto*/
+    #TextoDescriptivoA {
+        margin: 0 20px 0 20px;
+    }
+
+    #TextoDescriptivoA>p {
+        font-size: 1.2vw;
+    }
+
+    /*cajita de enlaces*/
+
+    #cajaEnlaces {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 20vw;
+    }
+
+    /*cajita de cada enlaces*/
+    #primerElementoA,
+    #segundoElementoA,
+    #ultimoElementoA {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /*titulo de enlaces*/
+    #cajaEnlaces>h3 {
+        position: absolute;
+        margin: 0px 0 12vw 0px;
+        font-size: 1.3vw;
+    }
+
+    /*texto de enlaces*/
+    #primerElementoA>h3,
+    #segundoElementoA>h3,
+    #ultimoElementoA>h3 {
+        font-size: 1vw;
+        margin: 1vw 1vw 0 1vw;
+    }
+
+    /*iconos*/
+    #logoDeProyecto {
+        width: 3.5rem;
+    }
+
+    /*ultimo elemento*/
+    #ultimoElementoA {
+        margin: 0px 120px 0 0;
+    }
+
+
+    #primerElementoA:hover,
+    #segundoElementoA:hover,
+    #ultimoElementoA:hover {
+        border: 1px solid #43444427;
+    }
+
+
+
+    /*texto que se oculta*/
+    #textqueSeOculta {
+        display: none;
+
+    }
+
+    /*********fila uno ********/
+
+
+    /************************************pie de pagina *****************************************/
+
+    #pieDPagina {
+        display: flex;
+        flex-direction: column;
+        height: 180px;
+        width: 100%;
+        background-color: #2fb167;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+    }
+
+    #pieDPagina>p {
+        color: azure;
+    }
+
+    #pieDPaginaContactos {
+        display: flex;
+        flex-direction: row;
+        color: azure;
+    }
+
+    /*logos*/
+
+    #logoWhasapp,
+    #logoGmail,
+    #logoLikedIn {
+        width: 30px;
+        height: 30px;
+        margin: 0px 0px 0px 10px;
+    }
+
+}
+
+/**************************************************************************************para la pantalla mediana***********************************************************************/
+@media (min-width: 768px) and (max-width: 1022px) {
+
+
+     /***************************************encabezado*******************************************/
+
+    /*caja de encabezado*/
+    #encabezadoLinks.flex-container {
+        display: flex;
+        flex-direction: row;
+        background-color: #2fb167;
+        height: 60px;
+
+
+        /*mueve en vertical al centro*/
+        align-items: center;
+    }
+
+    #encabezadoLinks {
+        /*para qeu el titulo este separado de los links*/
+        justify-content: space-between;
+    }
+
+    /*encabezado primero*/
+
+    /*mi nombre*/
+    #encabezadoLinks>.tituloNombre>a {
+        display: flex;
+        align-items: center;
+        height: 100px;
+        color: azure;
+        font-family: 'Climate Crisis', sans-serif;
+        font-size: 2.1vw;
+        margin: 0px 0px 0px 5vw;
+    }
+
+    .tituloNombre>a {
+        font-weight: 100;
+        padding: 0px 0px 0px 30px;
+
+        text-decoration: none;
+    }
+
+
+    /******************************************links******************************************/
+    /*contenedor*/
+    #encabezadoLinks {
+        display: flex;
+        justify-content: space-between;
+        height: 50px;
+    }
+
+
+    /*boton de hambuerguesa*/
+    .abrirMenu {
+        position: relative;
+        display: flex;
+        margin-right: 25px;
+        background-color: transparent;
+        border: 0;
+        color: azure;
+    }
+
+    /*boton cerrar*/
+    #botonParaCerrar {
+        position: relative;
+        display: flex;
+        margin-right: 30px;
+        background-color: transparent;
+        border: 0;
+        color: azure;
+    }
+
+
+    /*links*/
+    /*contenedor*/
+    .nav {
+        /*display: none;*/
+
+        position: absolute;
+        background-color: black;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+        z-index: 1;
+
+        /*para ocultar el menu*/
+        opacity: 0;
+        visibility: hidden;
+
+        transition: .30s;
+    }
+
+    /*na que mostrara el menu*/
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+
+
+
+    .nav-list {
+        color: white;
+        list-style-type: none;
+        margin: 0px;
+    }
+
+    .nav-list>li {
+        margin: 3vw 0 0 0;
+    }
+
+    .nav-list>li>a {
+        color: white;
+        text-decoration: none;
+       
+    }
+
+    .nav-list>#botonParaCerrar {
+        margin-left: 4em;
+    }
+
+
+
+
+
+
+    /**************************************imagen grande*********************************************/
+
+    #imagenGrande {
+        display: flex;
+        align-items: center;
+        font-family: 'Climate Crisis', sans-serif;
+
+    }
+
+    /*imagen*/
+    #imagen {
+        width: 100vw;
+    }
+
+    /*texto*/
+    #imagenGrande>h1,
+    #imagenGrande>p {
+        position: absolute;
+        color: white;
+        margin: 0 10vw 0 10vw;
+    }
+
+    #imagenGrande>h1 {
+        margin: 0 0 25vw 10vw;
+        font-size: 3vw;
+    }
+
+    #imagenGrande>p {
+        width: 60vw;
+        margin: 10vw 0 15vw 10vw;
+        font-size: 1.5vw;
+    }
+
+    /***********************************titulo de proyectos**************************************************/
+
+
+
+    #TituloDProyectos {
+        background-color: #2fb167;
+        font-family: 'Climate Crisis', sans-serif;
+        font-size: 1.7vw;
+        padding: 10px 10px 10px 7vw;
+        color: white;
+
+    }
+
+
+    /************************************fila de proyectos**************************************/
+
+    /*********fila uno ********/
+    /*fila UNO*/
+    #filaUNO {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Playpen Sans', cursive;
+        margin: 20px 0 0 0px;
+    }
+
+    /*fila UNO*/
+    #PrimeraParteA:hover {
+        box-shadow: 0 0 20px #434444;
+    }
+
+
+    #filaUNO>#PrimeraParteA>h3 {
+        font-weight: 900;
+    }
+
+    /*primera parte A*/
+    #filaUNO>#PrimeraParteA {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0px 0px 0px 10vw;
+    }
+
+    /*imagen del proyecto*/
+    #imagenPortafolioUno {
+        width: 40vw;
+        height: 27vw;
+    }
+
+    /*descripcion del proyecto*/
+    #TextoDescriptivoA {
+        display: none;
+    }
+
+    /*cajita de enlaces*/
+
+    #cajaEnlaces {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 280px;
+        margin: 0 0 0 8vw;
+    }
+
+    /*cajita de cada enlaces*/
+    #primerElementoA,
+    #segundoElementoA,
+    #ultimoElementoA {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /*titulo de enlaces*/
+    #cajaEnlaces>h3 {
+        position: absolute;
+        margin: 2.7vw 0 140px 0px;
+        font-size: 3vw;
+    }
+
+    /*texto de enlaces*/
+    #primerElementoA>h3,
+    #segundoElementoA>h3,
+    #ultimoElementoA>h3 {
+        font-size: 2vw;
+        margin: 1vw 10px 0 10px;
+    }
+
+    /*primer elemento*/
+    #primerElementoA {
+        margin: 9vw 0 0 0;
+    }
+
+    /*iconos*/
+    #logoDeProyecto {
+        width: 5vw;
+    }
+
+    /*ultimo elemento*/
+    #ultimoElementoA {
+        margin: 0px 0px 0 0;
+    }
+
+
+    #primerElementoA:hover,
+    #segundoElementoA:hover,
+    #ultimoElementoA:hover {
+        border: 1px solid #43444427;
+    }
+
+
+
+    /*texto que se oculta*/
+    #textqueSeOculta {
+        font-family: 'Playpen Sans', cursive;
+        margin: 0 10vw 20px 26vw;
+    }
+
+    /*********fila uno ********/
+
+
+    /************************************pie de pagina *****************************************/
+
+    #pieDPagina {
+        display: flex;
+        flex-direction: column;
+        height: 180px;
+        width: 100%;
+        background-color: #2fb167;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+    }
+
+    #pieDPagina>p {
+        color: azure;
+    }
+
+    #pieDPaginaContactos {
+        display: flex;
+        flex-direction: row;
+        color: azure;
+    }
+
+    /*logos*/
+
+    #logoWhasapp,
+    #logoGmail,
+    #logoLikedIn {
+        width: 30px;
+        height: 30px;
+        margin: 0px 0px 0px 10px;
+    }
+}
+
+   
+
+
+/**************************************************************************************para la pantalla pequeña***********************************************************************/
+
+@media (max-width: 767px) {
+
+  
+     /***************************************encabezado*******************************************/
+
+    /*caja de encabezado*/
+    #encabezadoLinks.flex-container {
+        display: flex;
+        flex-direction: row;
+        background-color: #2fb167;
+        height: 60px;
+
+
+        /*mueve en vertical al centro*/
+        align-items: center;
+    }
+
+    #encabezadoLinks {
+        /*para qeu el titulo este separado de los links*/
+        justify-content: space-between;
+    }
+
+    /*encabezado primero*/
+
+    /*mi nombre*/
+    #encabezadoLinks>.tituloNombre>a {
+        display: flex;
+        align-items: center;
+        height: 100px;
+        color: azure;
+        font-family: 'Climate Crisis', sans-serif;
+        font-size: 3.1vw;
+        margin: 0px 0px 0px 5vw;
+    }
+
+    .tituloNombre>a {
+        font-weight: 100;
+        padding: 0px 0px 0px 30px;
+
+        text-decoration: none;
+    }
+
+
+    /******************************************links******************************************/
+    /*contenedor*/
+    #encabezadoLinks {
+        display: flex;
+        justify-content: space-between;
+        height: 50px;
+    }
+
+
+    /*boton de hambuerguesa*/
+    .abrirMenu {
+        position: relative;
+        display: flex;
+        margin-right: 25px;
+        background-color: transparent;
+        border: 0;
+        color: azure;
+    }
+
+    /*boton cerrar*/
+    #botonParaCerrar {
+        position: relative;
+        display: flex;
+        margin-right: 30px;
+        background-color: transparent;
+        border: 0;
+        color: azure;
+    }
+
+
+    /*links*/
+    /*contenedor*/
+    .nav {
+        /*display: none;*/
+
+        position: absolute;
+        background-color: black;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+        z-index: 1;
+
+        /*para ocultar el menu*/
+        opacity: 0;
+        visibility: hidden;
+
+        transition: .30s;
+    }
+
+    /*na que mostrara el menu*/
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+
+
+
+    .nav-list {
+        color: white;
+        list-style-type: none;
+        margin: 0px;
+    }
+
+    .nav-list>li {
+        margin: 3vw 0 0 0;
+    }
+
+    .nav-list>li>a {
+        color: white;
+        text-decoration: none;
+       
+    }
+
+    .nav-list>#botonParaCerrar {
+        margin-left: 4em;
+    }
+
+
+
+
+
+
+    /**************************************imagen grande*********************************************/
+
+    #imagenGrande {
+        display: flex;
+        align-items: center;
+        font-family: 'Climate Crisis', sans-serif;
+        height: 0;
+        visibility: hidden;
+
+    }
+
+   
+
+    /***********************************titulo de proyectos**************************************************/
+
+    #TituloDProyectos {
+        display: flex;
+        justify-content: center;
+        background-color: green;
+        font-family: 'Climate Crisis', sans-serif;
+        font-size: 1.7vw;
+        padding: 10px 10px 10px 7vw;
+        color: white;
+
+    }
+
+
+    /************************************fila de proyectos**************************************/
+
+    /*********fila uno ********/
+    /*fila UNO*/
+    #filaUNO {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Playpen Sans', cursive;
+        margin: 20px 0 0 0px;
+    }
+
+    /*fila UNO*/
+    #PrimeraParteA:hover {
+        box-shadow: 0 0 20px #434444;
+    }
+
+
+    #filaUNO>#PrimeraParteA>h3 {
+      
+        font-weight: 500;
+        font-size: 4vw;
+    }
+
+    /*primera parte A*/
+    #filaUNO>#PrimeraParteA {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0px 0px 0px 10vw;
+    }
+
+    /*imagen del proyecto*/
+    #imagenPortafolioUno {
+        width: 65vw;
+        height: 45vw;
+    }
+
+    /*descripcion del proyecto*/
+    #TextoDescriptivoA {
+        margin: 5px 12vw 0px 23vw;
+    }
+    #TextoDescriptivoA>p {
+        font-size: 12px;
+    } 
+
+    /*cajita de enlaces*/
+
+    #cajaEnlaces {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: ;
+        margin: 0px 0 5px 0vw;
+    }
+
+    /*cajita de cada enlaces*/
+    #primerElementoA,
+    #segundoElementoA,
+    #ultimoElementoA {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /*titulo de enlaces*/
+
+    
+    #cajaEnlaces>h3 {
+        font-size: 3.2vw;
+        margin: 0 8vw  12vw;
+    }
+
+    /*texto de enlaces*/
+    #primerElementoA>h3,
+    #segundoElementoA>h3,
+    #ultimoElementoA>h3 {
+        font-size: 2vw;
+        margin: 1vw 10px 0 10px;
+    }
+
+    /*primer elemento*/
+    #primerElementoA {
+        margin: 0 0 0 0;
+    }
+
+    /*iconos*/
+    #logoDeProyecto {
+        width: 6vw;
+    }
+
+    
+
+
+    #primerElementoA:hover,
+    #segundoElementoA:hover,
+    #ultimoElementoA:hover {
+        border: 1px solid #43444427;
+    }
+
+
+
+    /*texto que se oculta*/
+    #textqueSeOculta {
+        visibility: hidden;
+        height: 0;
+    }
+
+    /*********fila uno ********/
+
+
+    /************************************pie de pagina *****************************************/
+
+    #pieDPagina {
+        display: flex;
+        flex-direction: column;
+        height: 100px;
+        width: 100%;
+        background-color: #2fb167;
+        align-items: center;
+        justify-content: center;
+        font-size: 10px;
+    }
+
+    #pieDPagina>p {
+        color: azure;
+    }
+
+    #pieDPaginaContactos {
+        display: flex;
+        flex-direction: row;
+        color: azure;
+    }
+
+    /*logos*/
+
+    #logoWhasapp,
+    #logoGmail,
+    #logoLikedIn {
+        width: 21px;
+        height: 21px;
+        margin: 0px 0px 0px 10px;
+    }
+}
