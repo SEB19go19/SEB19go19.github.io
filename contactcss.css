@@ -96,6 +96,44 @@
         display: none;
     }
 
+    /****************************************************cuerpo de pagina*************************************************************************/
+
+    #contenedorGrande{
+        display: flex;
+        flex-direction: column;
+        margin: 10vw 30vw 10vw 30vw;
+    }
+
+    h1,
+    p,
+    form {
+        font-family: 'Playpen Sans', cursive;
+    }
+
+    #contenedorGrande>p {
+        margin: 2vw 0 2vw 0;
+    }
+
+    #lineaDFormulario {
+        display: flex;
+        justify-content: space-between;
+        
+    }
+
+    #boton{
+        width: 100%;
+        background-color: transparent;
+        border: 1px solid rgba(0, 0, 0, 0.219);
+    }
+
+    #boton:hover{
+        background-color: #038C3E;
+        box-shadow: 0 0 5px 5px rgba(0, 128, 0, 0.226);
+    }
+
+
+
+
 
 
 
@@ -429,5 +467,3 @@
         margin: 0px 0px 0px 10px;
     }
 }
-
-
