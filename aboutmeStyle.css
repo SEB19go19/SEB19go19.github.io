@@ -103,6 +103,8 @@
         display: flex;
         flex-direction: row;
         align-items: center;
+        font-family: 'Playpen Sans', cursive;
+      
 
         margin: 2vw 20vw 1vw 20vw;
     }
@@ -118,6 +120,7 @@
         display: flex;
         flex-direction: row;
         align-items: center;
+        font-family: 'Playpen Sans', cursive;
 
         margin: 2vw 20vw 1vw 20vw;
     }
@@ -161,7 +164,7 @@
 
     /*encabezado*/
     thead{
-       font-size: 2vw;
+       font-size: 1.6vw;
     }
 
     /*elementos individuales*/
@@ -185,6 +188,11 @@
     }
 
 
+
+    /*para ocultar*/
+    #cuartaLinea{
+        display: none;
+    }
 
 
 
@@ -226,21 +234,25 @@
 
 /**************************************************************************************para la pantalla mediana***********************************************************************/
 @media (min-width: 768px) and (max-width: 1022px) {
-    /***************************************encabezado*******************************************/
+
+
+ /***************************************encabezado*******************************************/
 
     /*caja de encabezado*/
-    #encabezadoNombre.flex-container {
-        display: flex;
-        flex-direction: row;
-    }
-
     #encabezadoLinks.flex-container {
         display: flex;
         flex-direction: row;
         background-color: #038C3E;
         height: 60px;
 
+
+        /*mueve en vertical al centro*/
         align-items: center;
+    }
+
+    #encabezadoLinks {
+        /*para qeu el titulo este separado de los links*/
+        justify-content: space-between;
     }
 
     /*encabezado primero*/
@@ -252,8 +264,8 @@
         height: 100px;
         color: azure;
         font-family: 'Climate Crisis', sans-serif;
-        font-size: 2.4vw;
-        margin: 0px 0px 0px 40px;
+        font-size: 2.3vw;
+        margin: 0px 0px 0px 100px;
     }
 
     .tituloNombre>a {
@@ -262,7 +274,8 @@
         text-decoration: none;
     }
 
-    /******************************************links******************************************/
+
+   /******************************************links******************************************/
     /*contenedor*/
     #encabezadoLinks {
         display: flex;
@@ -338,7 +351,106 @@
         margin-left: 4em;
     }
 
+    /********************************cuerpo de paguina******************************************/
 
+    /**********************primera fila*************************/
+    #cuerpoPresentacion {
+        
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        font-family: 'Playpen Sans', cursive;
+      
+
+        margin: 2vw 20vw 1vw 20vw;
+    }
+
+    #imagenSecundaria {
+        order: -1;
+        width: 20vw;
+        border-radius: 100%;
+        border: 2px solid rgba(0, 0, 0, 0.26);
+    }
+
+    /**********************primera fila*************************/
+    #segundaLinea{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       
+        font-family: 'Playpen Sans', cursive;
+
+        margin: 2vw 20vw 1vw 20vw;
+    }
+
+    #letrasPresentacion {
+        margin: 1vw;
+        text-align: center;
+    } 
+
+    #segundaIimagen{
+        width: 20vw;
+        border-radius: 100%;
+        border: 2px solid rgba(0, 0, 0, 0.26);
+    }
+
+    
+
+    /***********************tabla************************************/
+    #terceraLinea{
+        display: none;
+    }
+
+    /*iconos*/
+    #icono{
+        width: 12vw;
+    }
+
+    /*******************nueva tabla**********************************/
+
+    #segundaTabla{
+        width: 100%;
+    }
+
+    #cuartaLinea{
+        margin: 2vw 20vw 1vw 20vw;
+        padding: 2vw;
+        border: 1px solid rgba(0, 0, 0, 0.185);
+
+        font-family: 'Playpen Sans', cursive;
+    }
+
+    /*el titulo*/
+    #Titulo{
+    }
+
+    #fila{
+        font-size: 2vw;
+        gap: 2vw;
+    }
+
+
+    /*parte de certificados*/
+    #fila td:nth-child(2){
+    }
+
+    #primerContenedor{
+        text-align: center;
+    }
+
+    #primerContenedor>h1{
+        font-size: 3vw;
+    }
+
+
+    /*configuracion de link como imagen*/
+    #primerContenedor a:nth-child(1)>img {
+        width: 10vw;
+    }
+
+    
 
 
     /************************************pie de pagina *****************************************/
@@ -346,12 +458,12 @@
     #pieDPagina {
         display: flex;
         flex-direction: column;
-        height: 120px;
+        height: 180px;
         width: 100%;
         background-color: #038C3E;
         align-items: center;
         justify-content: center;
-        font-size: 15px;
+        font-size: 20px;
     }
 
     #pieDPagina>p {
@@ -373,6 +485,8 @@
         height: 30px;
         margin: 0px 0px 0px 10px;
     }
+    
+   
 }
 
 
@@ -383,17 +497,20 @@
     /***************************************encabezado*******************************************/
 
     /*caja de encabezado*/
-    #encabezadoNombre.flex-container {
-        display: flex;
-        flex-direction: row;
-    }
-
     #encabezadoLinks.flex-container {
         display: flex;
         flex-direction: row;
         background-color: #038C3E;
         height: 60px;
+
+
+        /*mueve en vertical al centro*/
         align-items: center;
+    }
+
+    #encabezadoLinks {
+        /*para qeu el titulo este separado de los links*/
+        justify-content: space-between;
     }
 
     /*encabezado primero*/
@@ -405,23 +522,25 @@
         height: 100px;
         color: azure;
         font-family: 'Climate Crisis', sans-serif;
-        font-size: 3vw;
-        margin: 0px 0px 0px 20px;
+        font-size: 3.4vw;
+        margin: 0px 0px 0px 6vw;
     }
 
     .tituloNombre>a {
         font-weight: 100;
-        padding: 0px 0px 0px 30px;
+        padding: 0px 0px 0px 0;
         text-decoration: none;
     }
 
-    /******************************************links******************************************/
+
+   /******************************************links******************************************/
     /*contenedor*/
     #encabezadoLinks {
         display: flex;
         justify-content: space-between;
         height: 50px;
     }
+
 
     /*boton de hambuerguesa*/
     .abrirMenu {
@@ -447,6 +566,8 @@
     /*links*/
     /*contenedor*/
     .nav {
+        /*display: none;*/
+
         position: absolute;
         background-color: black;
         top: 0;
@@ -458,6 +579,8 @@
         /*para ocultar el menu*/
         opacity: 0;
         visibility: hidden;
+
+        transition: .30s;
     }
 
     /*na que mostrara el menu*/
@@ -465,6 +588,8 @@
         opacity: 1;
         visibility: visible;
     }
+
+
 
     .nav-list {
         color: white;
@@ -484,19 +609,127 @@
         margin-left: 4em;
     }
 
+    /********************************cuerpo de paguina******************************************/
+
+    /**********************primera fila*************************/
+    #cuerpoPresentacion {
+        
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        font-family: 'Playpen Sans', cursive;
+      
+
+        margin: 2vw 20vw 1vw 20vw;
+    }
+
+    #imagenSecundaria {
+        order: -1;
+        width: 20vw;
+        border-radius: 100%;
+        border: 2px solid rgba(0, 0, 0, 0.26);
+    }
+
+    /**********************primera fila*************************/
+    #segundaLinea{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       
+        font-family: 'Playpen Sans', cursive;
+
+        margin: 2vw 20vw 1vw 20vw;
+    }
+
+    #letrasPresentacion {
+        margin: 1vw;
+        text-align: center;
+    } 
+
+    #segundaIimagen{
+        width: 20vw;
+        border-radius: 100%;
+        border: 2px solid rgba(0, 0, 0, 0.26);
+    }
+
+    
+
+    /***********************tabla************************************/
+    #terceraLinea{
+        display: none;
+    }
+
+    /*iconos*/
+    #icono{
+        width: 12vw;
+    }
+
+    /*******************nueva tabla**********************************/
+
+    #segundaTabla{
+        width: 100%;
+    }
+
+    #cuartaLinea{
+        margin: 2vw 20vw 1vw 20vw;
+        padding: 2vw;
+        border: 1px solid rgba(0, 0, 0, 0.185);
+
+        font-family: 'Playpen Sans', cursive;
+    }
+
+    /*el titulo*/
+    #Titulo{
+    }
+
+    #fila{
+        font-size: 2vw;
+        gap: 2vw;
+    }
+
+
+    /*parte de certificados*/
+    #fila td:nth-child(2){
+        display: none;
+    }
+
+    #primerContenedor{
+        text-align: center;
+    }
+
+    #primerContenedor>h1{
+        font-size: 3vw;
+    }
+
+    #encabezados th:nth-child(2){
+        display: none;
+    }
+
+
+    /*logo de python*/
+    #primerContenedor>a>img{
+        width: 3vw;
+    }
+
+    /*configuracion de link como imagen*/
+    #primerContenedor a:nth-child(1)>img {
+        width: 10vw;
+    }
+
     /************************************pie de pagina *****************************************/
 
     #pieDPagina {
         display: flex;
         flex-direction: column;
-        height: 120px;
-
-
-
+        height: 110px;
+        width: 100%;
         background-color: #038C3E;
         align-items: center;
         justify-content: center;
-        font-size: 15px;
+        font-size: 3.5vw;
+        margin: 3vw 0 0 0 ;
     }
 
     #pieDPagina>p {
@@ -514,8 +747,10 @@
     #logoWhasapp,
     #logoGmail,
     #logoLikedIn {
-        width: 30px;
-        height: 30px;
+        width: 25px;
+        height: 25px;
         margin: 0px 0px 0px 10px;
     }
+    
+   
 }
